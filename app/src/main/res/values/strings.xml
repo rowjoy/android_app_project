@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Nec Money App</string>
-    <string name="click_me">Click me</string>
+    <string name="click_me">Show Tost</string>
+    <string name="Increment_data"> User me Up </string>
 </resources>
