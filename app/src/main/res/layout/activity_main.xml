@@ -8,33 +8,49 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/show_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="1"
-        android:textColor="@color/purple_200"
-        android:textSize="100dp" />
+        android:text="Login screen"
+        android:textSize="30dp"
+        android:textColor="@color/teal_700"
+        android:paddingLeft="10dp"/>
 
-    <Button
-        android:id="@+id/Click_me"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/email_name"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/click_me"
-        android:textColor="@color/white"
-        android:textSize="34dp" />
-    <Button
-        android:id="@+id/increment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textSize="23dp"
-        android:text="Increment count"
-        android:textColor="@color/white"
-        android:background="@color/design_default_color_on_primary"
-        android:backgroundTintMode="multiply"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="Enter email"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:layout_margin="10dp"/>
 
-   />
+    <EditText
+        android:id="@+id/Number_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:hint="Enter your password"
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="Login Now"
+        android:textSize="17dp"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
 
 </LinearLayout>
