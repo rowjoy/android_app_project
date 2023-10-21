@@ -1,56 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidUnknownAttribute -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="10dp"
         android:text="Login screen"
-        android:textSize="30dp"
         android:textColor="@color/teal_700"
-        android:paddingLeft="10dp"/>
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,RtlSymmetry,SpUsage" />
 
     <EditText
         android:id="@+id/email_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/edit_text_border"
-        android:padding="10dp"
-        android:inputType="textEmailAddress"
-        android:hint="Enter email"
         android:drawableStart="@drawable/ic_baseline_email_24"
-        android:layout_margin="10dp"/>
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/Number_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/edit_text_border"
-        android:padding="10dp"
-        android:inputType="numberPassword"
-        android:hint="Enter your password"
         android:drawableStart="@drawable/ic_baseline_lock_open_24"
-        android:layout_margin="10dp"/>
+        android:hint="Enter your password"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        tools:ignore="Autofill,HardcodedText" />
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+
         android:padding="10dp"
         android:text="Login Now"
+        android:textColor="@color/white"
         android:textSize="17dp"
-        android:textColor="@color/white"/>
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <ImageView
+        android:id="@+id/Dice_image"
+        android:layout_width="wrap_content"
+        android:src="@drawable/dice_1"
+        android:layout_gravity = "center_horizontal"
+        android:layout_height="wrap_content" />
 
 
 
 
-
+    <Button
+        android:id="@+id/Dice_button"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Dice roll" />
 
 
 </LinearLayout>
