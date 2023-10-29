@@ -9,26 +9,36 @@ import com.nec.androidapp.R.layout.activity_main
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var  diceImage : ImageView;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main);
-//        val emailcontroller : EditText = findViewById(R.id.email_name);
-//        val passwordController : EditText = findViewById(R.id.Number_password);
-//        login_buttonOpration("rowjoy@gmail.com", "dhjfdjfhfg");
+        val emailcontroller : EditText = findViewById(R.id.email_name);
+        val passwordController : EditText = findViewById(R.id.Number_password);
 
-        var diceButton : Button = findViewById(R.id.Dice_button);
+        login_buttonOpration("rowjoy@gmail.com", "dhjfdjfhfg");
+        val diceButton : Button = findViewById(R.id.Dice_button);
+        diceImage = findViewById(R.id.Dice_image);
+
         diceButton.setOnClickListener(){
             diceRandom();
         }
 
 
+
+
+
+
+
+
+
+
     }
 
-    private fun diceRandom() {
-        val diceImage : ImageView = findViewById(R.id.Dice_image);
-        val random = Random.nextInt(6) + 1;
 
-        val result =  when (random){
+
+    private fun diceRandom() {
+        val result =  when (Random.nextInt(6)){
             1 -> R.drawable.dice_1;
             2 -> R.drawable.dice_2;
             3 -> R.drawable.dice_3;
@@ -36,7 +46,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5;
             else -> R.drawable.dice_6;
         }
-
         diceImage.setImageResource(result);
 
     }
@@ -44,6 +53,8 @@ class MainActivity : AppCompatActivity() {
     private fun login_buttonOpration( email: String, password : String) {
         val login_button : Button = findViewById(R.id.login_button);
     }
+
+
 
 
 }
@@ -66,4 +77,5 @@ class MainActivity : AppCompatActivity() {
         };
 
 */
+
 
