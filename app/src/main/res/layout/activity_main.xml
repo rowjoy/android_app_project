@@ -59,7 +59,8 @@
     <ImageView
         android:id="@+id/Dice_image"
         android:layout_width="wrap_content"
-        android:src="@drawable/dice_1"
+        android:src="@drawable/empty_dice"
+        tools:src = "@drawable/dice_1"
         android:layout_gravity = "center_horizontal"
         android:layout_height="wrap_content" />
 
@@ -74,6 +75,11 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="Dice roll" />
+
+
+
+
+
 
 
 </LinearLayout>
